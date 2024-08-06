@@ -1,0 +1,28 @@
+Welcome to the readme!
+
+Alright, so my mission when writing this was to try and 
+simulate as much realism into this sim as I could without
+having to do any aerodynamics math.
+
+So what sort of features does this puppy have?
+
+Apart from the regular things you'd expect from a tool 
+like this. There are a few things I'm quite proud of...
+
+First is the ability to set the TVC maximum angle rate.
+Servos don't respond instantly, it takes a while to move
+from one angle to the next. You can set a rate for your 
+TVC. Any commands trying to tell the TVC to go faster than
+that max rate will be limited down to the maximum rate.
+
+Next, is the ability to set different noise parameters. There's
+angle sensor noise (like what you'd get from a BNO055) and sensor
+bias. There's also torque noise and bias. Torque noise is sort
+of a stand in for random wind or forces that may want to spin
+your rocket off course. The torque bias can be thought of as a
+constant torque trying to rotate your rocket. There's also
+TVC angle noise. We all know a TVC gimbal is not perfect. Everything
+between your servo motor to your actual motor tube can flex as 
+it transmits the forces of actuation. TVC Angle noise sort of simulates
+that.
+
